@@ -15,7 +15,7 @@ def create_game(get_game_data, description):
             print('Correct!')
         else:
             print(f"'{player_answer}' is wrong answer ;(.",
-                  "Correct answer was '{expect_answer}'.")
+                  f"Correct answer was '{expect_answer}'.")
             print(f"Let's try again, {player_name}!")
             return
     print(f'Congratulations, {player_name}!')

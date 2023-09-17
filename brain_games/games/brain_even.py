@@ -7,11 +7,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def number_generation():
-    return random.randint(1, 1000)
-
-
 def game_data_generation():
-    question_number = number_generation()
+    question_number = random.randint(1, 1000)
     correct_answer = 'yes' if is_even(question_number) else 'no'
     return (question_number, correct_answer)
