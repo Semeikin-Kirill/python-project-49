@@ -8,8 +8,8 @@ def create_game(get_game_data, description):
     player_name = welcome_user()
     print(description)
     for _ in range(ROUND_COUNT):
-        current_number, expect_answer = get_game_data()
-        print(f'Question: {current_number}')
+        current_question, expect_answer = get_game_data()
+        print(f'Question: {current_question}')
         player_answer = prompt.string('Your answer: ')
         if player_answer == expect_answer:
             print('Correct!')
